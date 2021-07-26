@@ -6,7 +6,7 @@ import { Input, Formulario } from '../../components/formulario';
 
 export default function Clientes() {
 
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
         localStorage.setItem("user", JSON.stringify(data))

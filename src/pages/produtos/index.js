@@ -5,7 +5,7 @@ import { Botao } from '../../components/botao';
 import { Input, Formulario, Select } from '../../components/formulario';
 
 export default function Produtos() {
-    const { register, handleSubmit, errors } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
         localStorage.setItem("produtos", JSON.stringify(data))

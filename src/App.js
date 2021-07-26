@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Routes from './routes';
+
+// int
 
 function App() {
+
+  // const [nome, setNome]=useState()
+
+  // const armazenar=(chave, valor)=>{
+  //   localStorage.setItem(chave, valor)
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
+
+    // <>
+    //   <label>teste</label>
+    //   <input type="text" value={nome} onChange={(e)=>setNome(e.target.value)}/>
+    //   <button onClick={()=>armazenar('ls_nome',nome)}>gravar nome</button>
+    // </>
   );
 }
 
